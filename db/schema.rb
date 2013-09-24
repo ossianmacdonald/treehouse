@@ -11,10 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130923221152) do
 
   create_table "statuses", :force => true do |t|
     t.string   "name"
+=======
+ActiveRecord::Schema.define(:version => 20130922174654) do
+
+  create_table "statuses", :force => true do |t|
+    t.string   "name"
+    t.string   "string"
+>>>>>>> 0b9bcd725c0c49da4b37ccaeb6e7cb1e298de01e
     t.text     "content"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

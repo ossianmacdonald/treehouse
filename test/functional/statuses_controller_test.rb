@@ -18,7 +18,11 @@ class StatusesControllerTest < ActionController::TestCase
 
   test "should create status" do
     assert_difference('Status.count') do
+<<<<<<< HEAD
       post :create, status: { content: @status.content, name: @status.name }
+=======
+      post :create, status: { content: @status.content, name: @status.name, string: @status.string }
+>>>>>>> 0b9bcd725c0c49da4b37ccaeb6e7cb1e298de01e
     end
 
     assert_redirected_to status_path(assigns(:status))
@@ -35,7 +39,11 @@ class StatusesControllerTest < ActionController::TestCase
   end
 
   test "should update status" do
+<<<<<<< HEAD
     put :update, id: @status, status: { content: @status.content, name: @status.name }
+=======
+    put :update, id: @status, status: { content: @status.content, name: @status.name, string: @status.string }
+>>>>>>> 0b9bcd725c0c49da4b37ccaeb6e7cb1e298de01e
     assert_redirected_to status_path(assigns(:status))
   end
 
